@@ -1,6 +1,6 @@
 def fibonacci(n):
     if n <= 0:
-        return "Not a positive integer"
+        return -1
     elif n == 1:
         return 0
     elif n == 2:
