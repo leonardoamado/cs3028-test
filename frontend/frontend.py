@@ -19,12 +19,14 @@ def calculate_fibonacci():
 
 root = tk.Tk()
 root.title("Fibonacci Calculator")
-tk.Label(root, text="Enter a number:").pack(pady=10)
-entry = tk.Entry(root)
-entry.pack(pady=5)
-tk.Button(root, text="Calculate", command=calculate_fibonacci).pack(pady=10)
-result_label = tk.Label(root, text="Fibonacci result will appear here.")
-result_label.pack(pady=10)
+root.geometry("300x300")
+
+tk.Label(root, text="Enter a number:", font=("Arial", 14)).pack(pady=20)  # Larger label with padding
+entry = tk.Entry(root, width=30, font=("Arial", 12))  # Wider entry box with larger font
+entry.pack(pady=10)
+tk.Button(root, text="Calculate", command=calculate_fibonacci, width=15, height=2, font=("Arial", 12)).pack(pady=20)
+result_label = tk.Label(root, text="Fibonacci result will appear here.", font=("Arial", 14), width=40, height=2)
+result_label.pack(pady=20)
 
 print("Starting")
 root.mainloop()
