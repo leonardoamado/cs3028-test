@@ -13,8 +13,8 @@ def calculate_fibonacci():
     try:
         n = int(entry.get())
         result = fibonacci(n)
-        if n < 0:
-            raise ValueError()
+        #if n < 0:
+        #    raise ValueError()
         result_label.config(text=f"Fibonacci({n}) = {result}")
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter a positive valid integer.")
