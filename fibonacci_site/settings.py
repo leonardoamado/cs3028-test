@@ -37,6 +37,7 @@ DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['cs3028-test-production.up.railway.app'])
 
+CSRF_TRUSTED_ORIGINS = ['https://cs3028-test-production.up.railway.app']
 
 # Application definition
 
