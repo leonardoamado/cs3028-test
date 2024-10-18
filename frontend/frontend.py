@@ -22,9 +22,9 @@ def calculate_fibonacci():
 
 root = tk.Tk()
 root.title("Fibonacci Calculator")
-root.geometry("300x300")
+root.geometry("250x250")
 
-tk.Label(root, text="Enter a number:", font=("Arial", 14)).pack(pady=20)  # Larger label with padding
+tk.Label(root, text="Enter a positive integer number:", font=("Arial", 14)).pack(pady=20)  # Larger label with padding
 entry = tk.Entry(root, width=30, font=("Arial", 12))  # Wider entry box with larger font
 entry.pack(pady=10)
 tk.Button(root, text="Calculate", command=calculate_fibonacci, width=15, height=2, font=("Arial", 12)).pack(pady=20)
